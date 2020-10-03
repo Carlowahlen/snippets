@@ -1,0 +1,26 @@
+with open('sportvelden.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=';')
+    headers = next(csv_reader, None)
+    print(headers)
+        
+['ï»¿Sportpark', 'straat', 'postcode', 'plaats']
+
+
+   
+with open('sportvelden.csv',encoding='utf-8') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=';')
+    headers = next(csv_reader, None)
+    print(headers)
+    print(csv_reader)    
+    
+['\ufeffSportpark', 'straat', 'postcode', 'plaats']
+
+
+with open('sportvelden.csv',encoding='utf-8-sig') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=';')
+    headers = next(csv_reader, None)
+    print(headers)
+    print(csv_reader)    
+    
+    ['Sportpark', 'straat', 'postcode', 'plaats']
+    
